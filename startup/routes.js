@@ -13,20 +13,20 @@ const setupRoutes = app => {
 	app.use(express.urlencoded({ extended: true }))
 	// uses a static folder for assets, and provides a route to view the assets
 	// for example http://localhost:3000/public/readme.txt
-	app.use(express.static('public'))
+	// app.use(express.static(path.join(__dirname, '/client/build/public')))
 
 	// Serve up our React client app
-	app.use(express.static(path.join(__dirname, '/client/build/index.html')))
+	app.use(express.static(path.join(__dirname, '../client/build/index.html')))
 
 	// Setup API routes
-	app.use('/', homepage)
+	// app.use('/', homepage)
 	app.use('/api/users', users)
 	app.use('/api/auth', auth)
 	app.use('/api/votes', votes)
 
 	// Default to serving our React client app
-	router.get('*', (req, res) => {
-		res.sendFile(path.join(__dirname, '/client/build/index.html'))
+	app.get('*', (req, res) => {
+		res.sendFile(path.join(__dirname, '../client/build/index.html'))
 	})
 
 	// Custom middleware functions, called in sequence
