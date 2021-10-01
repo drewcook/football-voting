@@ -77,7 +77,7 @@ const VotesTable = props => {
 										</TableCell>
 										<TableCell align="right">{row.team_name}</TableCell>
 										<TableCell align="right">
-											{format(new Date(row.created_at), 'yyyy-MM-dd @ kk:mm')}
+											{format(new Date(row.created_at), 'MM/dd/yyyy @ hh:mm aaa')}
 										</TableCell>
 									</TableRow>
 								))

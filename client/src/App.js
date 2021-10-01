@@ -52,22 +52,28 @@ const App = () => {
 				</Typography>
 			</AppBar>
 			<Container maxWidth="md" sx={contentStyles}>
-				<Box mt={4}>
-					<Typography variant="h2" color="initial">
+				<Box mt={6}>
+					<Typography variant="h2" color="initial" gutterBottom>
 						Your Voice Matters!
 					</Typography>
-					<Typography variant="subtitle1" color="initial">
-						Vote on what you'd like to see the Washington Football Team, formerly known as the
-						Washington Redskins, be named for the coming future. Your voice matters on this hot
-						topic of debate.
+					<Typography variant="subtitle1" color="initial" gutterBottom>
+						As you may have heard, there have been numerous instances of the white man becoming more
+						policitally correct to cover up for their initial wrongdoings and crimes of humanity
+						throughout American history. Many of these events revolve around all things American,
+						sports entertainment. Now is your chance to influence these wrongdoers.
+					</Typography>
+					<Typography variant="subtitle1" color="info" sx={{ fontWeight: 'bold' }}>
+						Vote on what you'd like to see the Washington Football Team, formerly the Washington
+						Redskins, be named for the inforseeable future. Your voice matters on this hot topic of
+						debate.
 					</Typography>
 				</Box>
 				<VotesContainer />
 				<Typography variant="body2" sx={footerStyles}>
 					<small>
-						&copy; {new Date().getFullYear()}{' '}
+						&copy; 2021{' '}
 						<a href="https://drewcook.dev" style={linkStyles}>
-							DC
+							DCDev
 						</a>
 					</small>
 				</Typography>

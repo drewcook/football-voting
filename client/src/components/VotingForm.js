@@ -12,21 +12,22 @@ const VotingForm = props => {
 
 	return (
 		<Box mt={5}>
-			<Paper elevation={4}>
+			<Paper elevation={2}>
 				<Box p={4}>
 					<Typography variant="h5" color="initial">
-						What would you like to see the football team, that which of is currently located in the
-						United States city of Washington D.C., be named?
+						What would you like to see the football team currently located in the US capitol city of
+						Washington D.C. be named for the inforseeable future?
 					</Typography>
 					<Box mb={2} />
 					<Typography variant="overline" color="initial">
-						You will not be judged.
+						You will not be judged (unlikely)
 					</Typography>
 					<Box mb={4} />
 					<form onSubmit={onSubmit}>
 						<TextField
 							id="filled-basic"
-							label="Hatchet Throwers, Insurrectionists, Americans, etc."
+							label="Team Name"
+							placeholder="Red-Bloods, Insurrectionists, Whiteys, etc."
 							variant="filled"
 							color="info"
 							onChange={onChange}

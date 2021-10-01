@@ -1,5 +1,6 @@
 body {
 	background-color: #eee;
+	background: linear-gradient(rgba(240, 240, 240, 0.95), rgba(240, 240, 240, 0.95)), url('./assets/helmet_sm.png') center center repeat fixed;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
