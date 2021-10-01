@@ -1,6 +1,5 @@
 const express = require('express')
 const logError = require('../middleware/logError')
-const users = require('../routes/users')
 const auth = require('../routes/auth')
 const votes = require('../routes/votes')
 const path = require('path')
@@ -17,7 +16,6 @@ const setupRoutes = app => {
 	app.use(express.urlencoded({ extended: true }))
 
 	// Setup API routes
-	app.use('/api/users', users)
 	app.use('/api/auth', auth)
 	app.use('/api/votes', votes)
 
